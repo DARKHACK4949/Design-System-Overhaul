@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <style>
+    /* Ground flips against the browser chrome so the mark holds in either
+       theme; the three product colours stay fixed, they are the identity. */
+    :root { --ground: #0c0b09; }
+    @media (prefers-color-scheme: dark) { :root { --ground: #f6f4ef; } }
+  </style>
+  <rect width="32" height="32" fill="var(--ground)"/>
+  <rect x="5"    y="6" width="5" height="20" fill="#e74c21"/>
+  <rect x="13.5" y="6" width="5" height="20" fill="#b3452c"/>
+  <rect x="22"   y="6" width="5" height="20" fill="#e83fc8"/>
+  <!-- one shared layer rule crossing all three lanes -->
+  <rect y="12" width="32" height="1" fill="var(--ground)"/>
+</svg>
